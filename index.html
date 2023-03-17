@@ -20,7 +20,21 @@
         <p>More than one source can be used inside a picture element. Add a third image with a media condition to the picture elements below.</p>
         <p></p>
 
-        <!-- add picture element here -->
+        <!-- use picture element to swap different images with different dimensions at different screen sizes -->
+        <picture>
+            <source media="(min-width: 700px)" srcset="img/chocolate-bunnies.webp">
+            <img src="img/chocolate-bunnies-thumb.webp" alt="Three chocolate Easter bunnies">
+        </picture>
+
+        <picture>
+            <source media="(min-width: 700px)" srcset="img/chocolate-eggs.webp">
+            <img src="img/chocolate-eggs-thumb.webp" alt="Three chocolate Easter bunnies">
+        </picture>
+
+        <picture>
+            <source media="(min-width: 700px)" srcset="img/easter.webp">
+            <img src="img/easter-thumb.webp" alt="Three chocolate Easter bunnies">
+        </picture>
     </section>
 
     
